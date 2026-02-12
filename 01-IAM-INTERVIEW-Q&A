@@ -1,0 +1,40 @@
+🎯-it important in AWS architecture?
+ans-
+IAM (Identity and Access Management) is a global AWS service that manages authentication and authorization for AWS resources.
+It defines who can access AWS and what actions they are allowed to perform on specific resources using policies.
+IAM is the foundation of AWS security because it ensures secure and controlled access to cloud infrastructure.
+
+👉 What do you mean by authentication?
+
+Correct response:
+
+Authentication verifies the identity of a user or service, usually using credentials like passwords or access keys.
+
+👉 What is authorization?
+
+Authorization determines what actions that authenticated identity is allowed to perform.
+
+---------------------------------or-------------------------------------------------------
+
+IAM (Identity and Access Management) is a global AWS service that manages authentication and authorization for AWS resources.
+It controls who can access AWS services and what actions they are allowed to perform on specific resources using policies.
+IAM is the foundation of AWS security and helps enforce the principle of least privilege
+
+
+🎯 Q2
+
+Explain the difference between authentication and authorization with a real AWS example.
+ans-
+Authentication is the process of verifying the identity of a user or service. In AWS, this happens when a user logs in using a username and password, or when an application uses access keys.
+
+Authorization happens after authentication. It determines what actions that authenticated identity is allowed to perform based on IAM policies.
+
+For example, if a user logs into AWS and tries to upload a file to S3, AWS first verifies their identity (authentication). Then it checks their IAM policy to see whether they are allowed to perform the s3:PutObject action on that specific bucket (authorization).
+
+👉 Can authentication succeed but authorization fail?
+
+Correct answer:
+
+Yes. A user may successfully log in (authentication succeeds), but if their IAM policy does not allow a specific action, AWS will deny the request during authorization.
+
+If you say this → strong candidate.
